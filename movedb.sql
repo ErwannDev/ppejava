@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 07 mai 2019 à 08:58
+-- Généré le :  ven. 24 mai 2019 à 13:53
 -- Version du serveur :  5.7.23
 -- Version de PHP :  7.2.10
 
@@ -258,15 +258,15 @@ CREATE TABLE IF NOT EXISTS `offrir` (
   PRIMARY KEY (`OFFRE`),
   KEY `MED_DEPOTLEGAL` (`MED_DEPOTLEGAL`),
   KEY `VIS_MATRICULE` (`VIS_MATRICULE`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `offrir`
 --
 
 INSERT INTO `offrir` (`OFFRE`, `VIS_MATRICULE`, `RAP_NUM`, `MED_DEPOTLEGAL`, `OFF_QTE`) VALUES
-(NULL, 'a17', 4, '3MYC7', 3),
-(NULL, 'a17', 4, 'AMOX45', 12);
+(1, 'a17', 4, '3MYC7', 3),
+(2, 'a17', 4, 'AMOX45', 12);
 
 -- --------------------------------------------------------
 
@@ -455,7 +455,7 @@ INSERT INTO `rapport_visite` (`VIS_MATRICULE`, `RAP_NUM`, `PRA_NUM`, `RAP_DATE`,
 ('a131', 3, 23, '2002-04-18', 'Médecin curieux, à recontacer en décembre pour réunion', 'Actualisation annuelle'),
 ('a17', 4, 4, '2003-05-21', 'Changement de direction, redéfinition de la politique médicamenteuse, recours au générique', 'Baisse activité'),
 ('a131', 7, 41, '2003-03-23', 'RAS\r\nChangement de tel : 05 89 89 89 89', 'Rapport Annuel'),
-('a17', 8, 23, '02/05/2019', 'bien', 'routine');
+('a17', 8, 23, '02-05-2019', 'bien', 'routine');
 
 -- --------------------------------------------------------
 
