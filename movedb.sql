@@ -250,11 +250,12 @@ INSERT INTO `medicament` (`MED_DEPOTLEGAL`, `MED_NOMCOMMERCIAL`, `FAM_CODE`, `ME
 
 DROP TABLE IF EXISTS `offrir`;
 CREATE TABLE IF NOT EXISTS `offrir` (
+  `OFFRE` int(11) NOT NULL,
   `VIS_MATRICULE` varchar(10) NOT NULL,
   `RAP_NUM` int(11) NOT NULL,
   `MED_DEPOTLEGAL` varchar(10) NOT NULL,
   `OFF_QTE` int(11) DEFAULT NULL,
-  PRIMARY KEY (`MED_DEPOTLEGAL`),
+  PRIMARY KEY (`OFFRE`),
   KEY `MED_DEPOTLEGAL` (`MED_DEPOTLEGAL`),
   KEY `VIS_MATRICULE` (`VIS_MATRICULE`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -263,9 +264,9 @@ CREATE TABLE IF NOT EXISTS `offrir` (
 -- Déchargement des données de la table `offrir`
 --
 
-INSERT INTO `offrir` (`VIS_MATRICULE`, `RAP_NUM`, `MED_DEPOTLEGAL`, `OFF_QTE`) VALUES
-('a17', 4, '3MYC7', 3),
-('a17', 4, 'AMOX45', 12);
+INSERT INTO `offrir` (`OFFRE`, `VIS_MATRICULE`, `RAP_NUM`, `MED_DEPOTLEGAL`, `OFF_QTE`) VALUES
+(NULL, 'a17', 4, '3MYC7', 3),
+(NULL, 'a17', 4, 'AMOX45', 12);
 
 -- --------------------------------------------------------
 
