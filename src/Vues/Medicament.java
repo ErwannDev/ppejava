@@ -70,7 +70,7 @@ public class Medicament extends javax.swing.JFrame {
 
         jLabel5.setText("Composition");
 
-        jLabel6.setText("Effets indÃ©sirable");
+        jLabel6.setText("Effets indésirables");
 
         jTextFieldDepotLegal.setEditable(false);
         jTextFieldDepotLegal.setDisabledTextColor(new java.awt.Color(51, 51, 51));
@@ -102,12 +102,12 @@ public class Medicament extends javax.swing.JFrame {
         jTextAreaContreIndication.setDisabledTextColor(new java.awt.Color(51, 51, 51));
         jScrollPane2.setViewportView(jTextAreaContreIndication);
 
-        jLabel8.setText("Prix Ã©chantillons");
+        jLabel8.setText("Prix échantillons");
 
         jTextFieldPrixEchantillon.setEditable(false);
         jTextFieldPrixEchantillon.setDisabledTextColor(new java.awt.Color(51, 51, 51));
 
-        jButtonPrecedent.setText("PrÃ©cÃ©dent");
+        jButtonPrecedent.setText("Précédent");
 
         jButtonSuivant.setText("Suivant");
 

@@ -179,7 +179,7 @@ public class Dao {
             String nom = res.getString("VIS_NOM");
             String prenom = res.getString("Vis_PRENOM");
             String adresse = res.getString("VIS_ADRESSE");
-            String cp = res.getString("VIS_CP");;
+            String cp = res.getString("VIS_CP");
             String ville = res.getString("VIS_VILLE");
             Date date = res.getDate("VIS_DATEEMBAUCHE");
             String secCode = res.getString("SEC_CODE");
@@ -246,11 +246,12 @@ public class Dao {
         ResultSet res = state.executeQuery("Select * from OFFRIR");
         
         while(res.next()){
+        	int OFFRE = res.getInt("OFFRE");
             String VIS_MATRICULE = res.getString("VIS_MATRICULE");
             int RAP_NUM = res.getInt("RAP_NUM");
             String MED_DEPOTLEGAL = res.getString("MED_DEPOTLEGAL");
             int OFF_QTE = res.getInt("OFF_QTE");
-            unEchantillon = new Echantillons(VIS_MATRICULE, RAP_NUM, MED_DEPOTLEGAL, OFF_QTE);
+            unEchantillon = new Echantillons(OFFRE, VIS_MATRICULE, RAP_NUM, MED_DEPOTLEGAL, OFF_QTE);
             lesEchantillons.add(unEchantillon);
             
         }

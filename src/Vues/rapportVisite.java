@@ -156,7 +156,7 @@ public class rapportVisite extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("NumÃ©ro Rapport");
+        jLabel1.setText("Numéro Rapport");
 
         jTextFieldNumRapport.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextFieldNumRapport.addActionListener(new java.awt.event.ActionListener() {
@@ -215,7 +215,7 @@ public class rapportVisite extends javax.swing.JFrame {
             }
         });
 
-        jButtonPrecedent.setText("PrÃ©cÃ©dent");
+        jButtonPrecedent.setText("Précédent");
 
         jButtonFermer.setText("Fermer");
         jButtonFermer.addActionListener(new java.awt.event.ActionListener() {
@@ -233,7 +233,7 @@ public class rapportVisite extends javax.swing.JFrame {
                 {null, null}
             },
             new String [] {
-                "MÃ©dicaments", "Nb Enregistrements"
+                "Médicaments", "Nb Enregistrements"
             }
         ) {
             Class[] types = new Class [] {

@@ -10,6 +10,7 @@ package models.metier;
  * @author btssio
  */
 public class Echantillons {
+	int OFFRE;
     String VIS_MATRICULE;
     int RAP_NUM;
     String MED_DEPOTLEGAL;
@@ -18,7 +19,8 @@ public class Echantillons {
     
     
     //constructeur
-    public Echantillons(String VIS_MATRICULE, int RAP_NUM, String MED_DEPOTLEGAL, int OFF_QTE) {
+    public Echantillons(int OFFRE, String VIS_MATRICULE, int RAP_NUM, String MED_DEPOTLEGAL, int OFF_QTE) {
+    	this.OFFRE = OFFRE;
         this.VIS_MATRICULE = VIS_MATRICULE;
         this.RAP_NUM = RAP_NUM;
         this.MED_DEPOTLEGAL = MED_DEPOTLEGAL;
@@ -29,6 +31,10 @@ public class Echantillons {
     
     
     //getters
+    public int getOFFRE() {
+        return OFFRE;
+    }
+    
     public String getVIS_MATRICULE() {
         return VIS_MATRICULE;
     }
@@ -48,6 +54,10 @@ public class Echantillons {
     
     
     //setters
+    public void setOFFRE(int OFFRE) {
+        this.OFFRE = OFFRE;
+    }
+    
     public void setVIS_MATRICULE(String VIS_MATRICULE) {
         this.VIS_MATRICULE = VIS_MATRICULE;
     }

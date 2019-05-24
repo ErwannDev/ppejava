@@ -16,9 +16,9 @@ public class Connect {
 //      String user = "btssio";
 //      String password = "btssio";
       
-            String url = "jdbc:mysql://localhost:3306/movedb?serverTimezone=UTC";
+            String url = "jdbc:mysql://localhost:3306/movedb?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC";
             String user = "root";
-            String password = "";
+            String password = "root";
 
       Connection con = DriverManager.getConnection(url, user, password);
 

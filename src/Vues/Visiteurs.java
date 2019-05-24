@@ -131,7 +131,7 @@ DefaultComboBoxModel modeleListeVisiteurs;
 
         jLabel10.setText("Labo");
 
-        jButtonPrecedent.setText("PrÃ©cÃ©dent");
+        jButtonPrecedent.setText("Précédent");
 
         jButtonSuivant.setText("Suivant");
 

@@ -21,10 +21,11 @@ public class DaoRapport {
         con.close();
     }
     
-    public static void insertOffre(String visiteMatricule, int numeroRapport, String med_depotlegal, int qte) throws SQLException, ClassNotFoundException{
+    public static void insertOffre(String numOffre, String visiteMatricule, int numeroRapport, String med_depotlegal, int qte) throws SQLException, ClassNotFoundException{
         Connection con = models.Connect.Connection();
         Statement state = con.createStatement();
-        state.executeUpdate("insert into offrir values('" + visiteMatricule + "','" + numeroRapport + "','" + med_depotlegal + "','" + qte + "')");
+        System.out.println(qte);
+        state.executeUpdate("insert into offrir (VIS_MATRICULE, RAP_NUM, MED_DEPOTLEGAL, OFF_QTE) values('" + visiteMatricule + "','" + numeroRapport + "','" + med_depotlegal + "','" + qte + "')");
         
         state.close();
         con.close();

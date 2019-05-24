@@ -129,7 +129,7 @@ public class practiciens extends javax.swing.JFrame {
 
         jButtonOK.setText("OK");
 
-        jLabelNumero.setText("NumÃ©ro");
+        jLabelNumero.setText("Numéro");
 
         jTextFieldNumero.setEditable(false);
         jTextFieldNumero.setDisabledTextColor(new java.awt.Color(51, 51, 51));
@@ -181,7 +181,7 @@ public class practiciens extends javax.swing.JFrame {
 
         jButtonSuivant.setText("Suivant");
 
-        jButtonPrecedent.setText("PrÃ©cÃ©dent");
+        jButtonPrecedent.setText("Précédent");
 
         jComboBoxRecherche.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBoxRecherche.addActionListener(new java.awt.event.ActionListener() {

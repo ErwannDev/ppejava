@@ -1,4 +1,3 @@
-
 package controllers;
 
 import Vues.Menu;
@@ -43,7 +42,7 @@ public class ControllersRapportVisite implements ActionListener {
     private int countMed = 0;
     private int countOffre = 0;
     private boolean nouveau = false;
-    private DateFormat dateFormat = new SimpleDateFormat("yy/MM/dd");
+    private DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     
     public ControllersRapportVisite(rapportVisite vue, String login) {
         this.vue=vue;
@@ -128,15 +127,18 @@ public class ControllersRapportVisite implements ActionListener {
                     String modifVisite = vue.getjTextFieldModifVisite().getText();
                     String date = dateFormat.format(vue.getjDateChooser1().getDate());
                     String bilan = vue.getjTextAreaBilan().getText();
-                    DaoRapport.insertRapport(matri, numRapport,numPraticient, date, bilan,modifVisite);
+                    DaoRapport.insertRapport(matri, numRapport, numPraticient, date, bilan ,modifVisite);
+                    String numOffre = null;
                     for(int i=0;i<5;i++){
                         String depotLegal = getDepot(vue.getjTable1().getValueAt(i, 0).toString());
                         String quantity = vue.getjTable1().getValueAt(i, 1).toString().trim();
+                        System.out.println(quantity);
                         if(quantity != ""){
                             qte = Integer.parseInt(quantity);
                         }
                         if(depotLegal != null){
-                            DaoRapport.insertOffre(matri, numRapport, depotLegal, qte);
+                        	System.out.println(qte);
+                            DaoRapport.insertOffre(numOffre, matri, numRapport, depotLegal, qte);
                         }
                     }
                     vue.getjButtonNouveau().setLabel("Nouveau");
